@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/doubleCounterDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/double_counter"
+        app:layout_constraintBottom_toTopOf="@id/doubleCounterLabel"
+        app:layout_constraintLeft_toLeftOf="@id/doubleCounterLabel" />
+
+    <TextView
+        android:id="@+id/doubleCounterLabel"
+        android:layout_width="@dimen/standard_size"
+        android:layout_height="@dimen/standard_size"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        android:text="@string/initial_value"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toTopOf="@id/counterLabel"
+        app:layout_constraintLeft_toLeftOf="@id/counterLabel" />
+
+    <ImageButton
+        android:id="@+id/doubleIncButton"
+        android:layout_width="@dimen/standard_size"
+        android:layout_height="@dimen/standard_size"
+        android:src="@drawable/ic_add_2"
+        android:background="?android:selectableItemBackground"
+        app:layout_constraintRight_toLeftOf="@id/doubleCounterLabel"
+        app:layout_constraintTop_toTopOf="@id/doubleCounterLabel" />
+
+    <ImageButton
+        android:id="@+id/doubleDecrButton"
+        android:layout_width="@dimen/standard_size"
+        android:layout_height="@dimen/standard_size"
+        android:src="@drawable/ic_sub_2"
+        android:background="?android:selectableItemBackground"
+        app:layout_constraintLeft_toRightOf="@id/doubleCounterLabel"
+        app:layout_constraintTop_toTopOf="@id/doubleCounterLabel" />
+
+    <TextView
+        android:id="@+id/counterDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/normal_counter"
+        app:layout_constraintBottom_toTopOf="@id/counterLabel"
+        app:layout_constraintLeft_toLeftOf="@id/counterLabel" />
+
+    <TextView
+        android:id="@+id/counterLabel"
+        android:layout_width="@dimen/standard_size"
+        android:layout_height="@dimen/standard_size"
+        android:gravity="center"
+        android:text="@string/initial_value"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/addButton"
+        android:layout_width="@dimen/standard_size"
+        android:layout_height="@dimen/standard_size"
+        android:src="@drawable/ic_add_1"
+        android:background="?android:selectableItemBackground"
+        app:layout_constraintRight_toLeftOf="@id/counterLabel"
+        app:layout_constraintTop_toTopOf="@id/counterLabel" />
+
+    <ImageButton
+        android:id="@+id/decrButton"
+        android:layout_width="@dimen/standard_size"
+        android:layout_height="@dimen/standard_size"
+        android:src="@drawable/ic_sub_1"
+        android:background="?android:selectableItemBackground"
+        app:layout_constraintLeft_toRightOf="@id/counterLabel"
+        app:layout_constraintTop_toTopOf="@id/counterLabel" />
+
+    <ImageButton
+        android:id="@+id/refreshButton"
+        android:layout_width="@dimen/standard_size"
+        android:layout_height="@dimen/standard_size"
+        android:src="@drawable/ic_refresh"
+        android:background="?android:selectableItemBackground"
+        app:layout_constraintTop_toBottomOf="@id/counterLabel"
+        app:layout_constraintLeft_toLeftOf="@id/counterLabel"/>
+
+    <TextView
+        android:id="@+id/randomFactLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/fact"
+        app:layout_constraintLeft_toLeftOf="@id/addButton"
+        app:layout_constraintRight_toRightOf="@id/decrButton"
+        app:layout_constraintTop_toBottomOf="@id/refreshButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

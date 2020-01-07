@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ReduxTestApp</string>
+    <string name="initial_value">0</string>
+    <string name="double_counter">Double Counter</string>
+    <string name="normal_counter">Normal Counter</string>
+    <string name="fact">Random Number Fact</string>
+</resources>
